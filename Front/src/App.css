@@ -343,3 +343,349 @@ footer.footer-custom.home-footer {
   bottom: 0px;
   container: flex;
 }
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 767px){
+  .navbar {
+    position: relative;
+    z-index: 2;
+  }
+     
+  .navbar .d-flex.flex-column {
+    gap: 6px;
+    align-items: flex-end!important
+  }
+ 
+    .btn-dona {
+      order: 2; /* Va sotto */
+    }
+    .btn-burger {
+      order: 1; /* Va sopra */
+      
+    }
+    
+  
+
+  .modal-dialog {
+    
+    margin-top: 53px !important; /* centrato */
+
+  }
+
+  .modal-header .btn-close {
+    margin-right: -37px;
+    margin-bottom: -35px;
+    font-size: 17px;
+    width: 25px;        /* larghezza del cerchio */
+  height: 25px;
+  }
+  .custom-modal-width {
+    width: 90% !important; /* adatta larghezza al 90% dello schermo */
+    max-width: 335px !important; /* larghezza massima */
+    margin: 0 auto; /* centrato */
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+  .modal-column-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 15px 0 5px;
+    color: #2B2B85;
+  }
+  .menu-titles-separator {
+    height: 1px;
+    background: rgba(0,0,0,0.15);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    margin: 10px 0;
+  }
+
+
+  /* Navbar logo più piccolo */
+  .navbar-logo {
+    height: 125px;
+    margin-top: -10px;
+    margin-bottom: 35px;
+  }
+
+
+ 
+
+  .btn-outline-primary svg {
+    width: 40px;
+    height: 30px;
+  }
+
+  /* Modal più compatto */
+  .custom-modal-width {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .custom-modal-width .modal-body {
+    padding: 1rem !important;
+    height: auto;
+  }
+
+  .modal-title {
+    font-size: 28px !important;
+  }
+
+  .modal-column-title {
+    font-size: 20px !important;
+  }
+
+  .custom-nav-link {
+    font-size: 18px !important;
+    width: auto;
+    text-align: center !important;
+  }
+
+  .modal-body .row.gy-4 {
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+
+  /* Footer immagini disattivate su mobile */
+ 
+  .footer-image2 {
+    max-width: 500px !important; 
+    height: 50px !important;
+    left: 630px !important;
+    transform: translateX(-50%) !important;
+    position: relative !important; 
+    
+  }
+
+  .footer-image {
+    max-width: 500px !important; 
+    height: 50px !important;
+    left: 130px !important;
+    transform: translateX(-50%) !important;
+    position: relative; 
+    top: 50px;
+  }
+
+  .footer-custom {
+    padding-bottom: 100px; 
+  }
+
+  
+
+  .floating-image2 {
+    position: absolute !important;
+    width: 300px !important;
+    height: 100px !important;
+    top: 83px !important;
+    left: 440px !important;
+    transform: none !important;
+    
+  }
+
+  .floating-image{
+    position: absolute !important;
+    width: 440px !important;
+    height: 100px !important;
+    top: 83px !important;
+    left: 0px !important;
+    transform: none !important;
+ 
+  }
+  footer.footer-custom {
+    font-size: 1rem !important;
+    margin-bottom: -50px;
+  }
+
+  .bg-light.py-2.border-bottom .top-bar-text {
+    font-size: 17px !important;
+    text-align: left !important;
+    margin-bottom: -5px;
+    display: block; 
+  }
+
+  .bg-light.py-2.border-bottom .info-bar {
+    text-align: left !important;
+  }
+  .bg-light.py-2.border-bottom .d-flex.flex-column {
+    align-items: flex-start !important; /* forza allineamento a sinistra */
+  }
+
+
+
+  .info-bar .top-bar-text:first-child {
+    display: block !important;   /* tutto il blocco è su una riga */
+    white-space: nowrap !important; /* impedisce l'andata a capo */
+    margin-bottom: 1px !important;
+  }
+
+  .info-bar .top-bar-text:first-child span {
+    display: inline !important; 
+    
+ 
+  }
+  
+  .info-bar .top-bar-text:first-child span {
+    font-size: 17px !important; 
+  }
+
+  .info-bar .top-bar-text:last-child a {
+    font-size: 17px !important; 
+  }
+
+
+  .info-bar .top-bar-text:last-child {
+    display: block !important;
+    
+  }
+
+  .info-bar .top-bar-link.fw-bold.text-primary {
+    font-size: 17px !important;
+  }
+
+  .navbar-brand,
+.navbar .d-flex.flex-column,
+.navbar .btn-outline-primary {
+  position: relative;    
+  z-index: 2;          
+}
+
+
+}
+  
+@media (max-width: 767px) and (orientation: landscape) {
+  .mobile-landscape-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: auto;
+    align-items: flex-start !important;
+   
+  }
+
+  
+  .mobile-menu-separator {
+    width: 510%;
+    height: 1px;
+    background: rgba(0,0,0,0.15);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+
+  }
+
+
+  .mobile-landscape-layout > div {
+    flex: 1 1 20%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column; /* colonna verticale */
+  }
+
+  .mobile-landscape-layout h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2B2B85;
+    margin-bottom: 10px;
+    text-align: left;
+    
+    
+  }
+
+  .mobile-landscape-layout .nav {
+    align-items: flex-start;
+  }
+
+  .mobile-landscape-layout .custom-nav-link {
+    text-align: left !important;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .custom-modal-width  {
+    width: 100% !important;        
+    max-width: none !important;  
+    padding: 1.5rem 2rem !important; /* più spazio interno */
+    display: flex !important;
+    justify-content: center !important;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  .mobile-landscape-layout {
+    width: 100% !important;
+    gap: 1.5rem !important;     
+    flex-wrap: nowrap !important; 
+    
+    height: 370px;
+  }
+  .mobile-landscape-layout h5 {
+    font-size: 23px !important;
+  }
+
+ 
+  .mobile-landscape-layout .nav-link,
+  .mobile-landscape-layout .custom-nav-link {
+    font-size: 19px !important; /* forza la dimensione */
+    text-align: left !important;
+    width: 100%;
+   
+  }
+
+  .col-incontrho h5,
+  .col-sostienici h5,
+  .col-news h5, 
+  .col-campagne h5 {
+    margin-top: 27px;
+  }
+
+  .col-campagne h5 {
+    margin-left: -50px;
+  }
+  .col-news .nav {
+    margin-left: 25px;
+    
+  }
+
+  .col-incontrho .nav,
+  .col-sostienici .nav,
+  .col-news .nav,
+  .col-campagne .nav,
+  .col-cosa-facciamo .nav{
+    margin-top: 15px;
+  }
+
+
+  .modal-title {
+    margin-bottom: -10px; 
+    margin-top: -10px;
+    padding-top: 20px;
+  }
+  .navbar .d-flex.flex-column {
+    flex-direction: column !important; /* rimane colonna */
+    gap: 6px;
+    align-items: flex-end !important;
+    margin-top: 15px;
+    
+  }
+  
+  .btn-dona { 
+    order: 2 !important; 
+    margin-right: 80px;
+    width: 100px !important;
+    margin-top: -56px;
+  }  
+  .btn-burger { 
+    order: 1 !important; 
+  
+  } 
+}
+ 
+
+
